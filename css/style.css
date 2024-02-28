@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root{
     --yellow: #F4C229; 
     --blue: #5B8DF5; 
@@ -70,3 +71,176 @@ footer{
     text-align: center;
 }
 
+=======
+:root{
+    --yellow: #F4C229; 
+    --blue: #5B8DF5; 
+    --pink: #F54860;  
+    --white: #fff; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 500vh;
+}
+
+.container-header{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title, .btn {
+    margin: 0 -190px; /* Adiciona margem entre os elementos dentro da div flex */
+}
+
+header{
+    width: 100%;
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+header.scroll{
+    background-color: var(--pink);
+    padding: 10px 4%;
+    z-index: inherit;
+}
+
+.btn-doc{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    color: var(--pink); 
+    text-decoration: none; 
+    border: transparent;
+    border-radius: 25px; 
+}
+
+.backgrond{
+    height: 90vh;
+    background-image: url(../img/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.text-header h3,
+.text-header h1,
+.text-header .button-credits {
+    margin: 10px 0; 
+    color: white;
+}
+
+.github{
+    justify-content: center;
+    display: flex;
+    padding: 10px 10px;
+    background-color: #ffffff; 
+    color: var(--pink); 
+    text-decoration: none; 
+    border: transparent;
+    border-radius: 25px; 
+    width: 188px;
+    text-align: center;
+}
+
+.tinkerbell{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -250px;
+}
+
+.marcas-title{
+    align-items: center;
+    justify-content: center;
+    display: flex;  
+    margin-top: -100px;
+}
+
+.disney-marcas{
+    display: flex;
+    height: 10vh;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.marcas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    height: 10vh;
+    background-image: url(../img/footer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.logo-footer {
+    height: 50px;
+    margin-top: 15px;
+}
+
+.copyright-text {
+   color: #fff;
+}
+
+
+
+
+
+>>>>>>> 2ef5a22 (first)
