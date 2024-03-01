@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: var(--black-700);
+    font-size: 16px;
+}
+
+body{
+    background-color: #5B8DF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    height: 889px;
+    width: 1534px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    scale: 1;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: absolute;
+    right: 20rem;
+    align-items: center;
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+
+.inputbox input {
+    padding: 4% 0 10px;
+    padding-left: 20px;
+}
+
+.img-login {
+    position: absolute;
+    left: 37%;
+    
+}
+
+.castelo {
+    position: absolute;
+    top: 50%; 
+    left: -200px;
+    transform: translate(-50%, -50%); 
+    border-radius: 15px;
+    display: fixed;
+}
+
+.inputbox{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.login{
+    font-size: 30px;
+}
+.input01, .input02{
+    flex-direction: column;
+    display: flex;
+    width: 320px;
+}
+
+#userInput, #passwordInput{
+    border-radius: 10px;
+    border: #5B8DF5 2px solid ;
+}
+
+.loImg{
+    position: absolute;
+    top: 580px;
+    left:1120px;
+}
