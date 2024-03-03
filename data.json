@@ -7,11 +7,11 @@
     {
       "id": 2,
       "usuario": "igor",
-      "senha": "654321"
+      "senha": 654321
     },
     {
       "id": 3,
       "usuario": "Kaillaa",
-      "senha": "123654"
+      "senha": 123654
     }
   ]

@@ -87,6 +87,16 @@ body{
     border: #5B8DF5 2px solid ;
 }
 
+.button{
+    background-color: black;
+    border: transparent;
+    border-radius: 10px;
+    height: 49px;
+    width: 208px;
+    color: white;
+    font-weight: 900
+}
+
 .loImg{
     position: absolute;
     top: 580px;
