@@ -92,9 +92,13 @@ body{
     border: transparent;
     border-radius: 10px;
     height: 49px;
-    width: 208px;
+    width: 150px;
     color: white;
-    font-weight: 900
+    font-weight: 900;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .loImg{
