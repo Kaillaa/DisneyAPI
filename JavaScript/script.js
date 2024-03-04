@@ -2,6 +2,11 @@ window.addEventListener("scroll", function(){
     let header = document.querySelector('#header')
     header.classList.toggle('scroll', window.scrollY > 100)
 })
+document.addEventListener("DOMContentLoaded", function() {
+    const baseUrl = "https://api.disneyapi.dev/character";
+    const caractersImg = document.getElementById("caracters-img");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
 
 
     let currentPage = 1;
