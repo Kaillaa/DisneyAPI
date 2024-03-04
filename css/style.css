@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
     --yellow: #F4C229; 
     --blue: #5B8DF5; 
@@ -13,28 +15,10 @@
 
 body {
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container-header{
-    max-width: 1280px;
-    margin: auto;
-}
 
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.title, .btn {
-    margin: 0 -190px; 
-}
-.title{
-    height: 15px;
-}
-.logo{
-    height: 50px;
-    margin-top: -15px;    
-}
 
 header{
     width: 100%;
@@ -51,6 +35,13 @@ header.scroll{
     padding: 10px 4%;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9% 0 10%;
+}
+
 .btn-doc{
     display: inline-block;
     padding: 10px 20px;
@@ -60,14 +51,6 @@ header.scroll{
     border-radius: 25px; 
 }
 
-.login-btn{
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffffff;  
-    text-decoration: none; 
-    border: transparent;
-    border-radius: 25px;
-}
 
 .btn{
     display: flex;
@@ -75,8 +58,12 @@ header.scroll{
     gap: 40px
 }
 
-.background{
+/* SECTION HOME */
+
+
+.hero{
     height: 100vh;
+    width: 120vw;
     background-image: url(../img/imgBackgrond.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -86,135 +73,144 @@ header.scroll{
     justify-content: center;
 }
 
-.text-header {
-    text-align: center;
+.hero .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 150px
+    margin-right: 15rem;
 }
 
-.text-header h3,
-.text-header h1,
-.text-header .button-credits {
-    margin: 10px 0; 
-    color: white;
-}
-
-.text-header h3,
-.text-header h1{
+.hero h1 {
     font-size: 50px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 36px
 }
 
-.github{
-    justify-content: center;
-    display: flex;
-    padding: 10px 10px;
-    background-color: #ffffff; 
-    text-decoration: none; 
-    border: transparent;
-    border-radius: 25px; 
-    width: 188px;
+.hero span {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 36px;
     text-align: center;
 }
 
-.tinkerbell{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -250px;
+.hero span span{
+    color: var(--pink);
 }
 
-.marcas-title{
-    align-items: center;
-    justify-content: center;
-    display: flex;  
-    margin-top: 40px;
-    font-size: 20px;
-}
-
-.disney-marcas{
-    display: flex;
-    height: 15vh;
-    gap: 50px;
-    justify-content: center;
-    margin-top: 90px;
-}
-
-.marcas{
+.hero .button-credits {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 150px;
+    padding: 10px;
+    background: white;
+    border-radius: 25px;
 }
 
-.lucasFilms{
-    height: 60px;
-    margin-top: 40px;
-    display: flex;
+.hero .button-credits a {
+    color: red;
+    text-decoration: none;
 }
 
-.text-body{
+/* MARCAS SECTION  */
+.brands-section h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 36px
+}
+
+.brands-section .container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.midPage {
+.brands-section .disney-marcas {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.disney-marcas img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* SECTION ABOUT  */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0;
+    max-height: min-content;
+}
+
+.box-img-paragraph {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
     position: relative;
-    display: flex;
-    align-items: center;
+    top: -60rem;
 }
 
-.text-overlay {
+.box-img-paragraph img {
+    width: 300px;
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: 2;
-    padding: 20px;
-    color: white;
 }
 
-.imgMid {
+.box-img-paragraph .paragraphAbout {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
     position: relative;
-    flex: 1;
+    top: 30rem;
 }
 
-.stitch {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.textMid {
+.box-img-paragraph p{
     font-size: 40px;
-    z-index: 2;
-    position: absolute;
-    top: 55%; 
-    left: 180px; 
-    transform: translateY(-50%); 
+    font-weight: 700;
+    margin-bottom: 36px;
+    text-align: center;
+    margin-left: 3.5rem;
+    color: var(--white);
+    width: 33%;
 }
 
-.textMid p {
-    width: 400px;
-    margin: 0; 
-    color: #fff; 
+.box-img-paragraph .box02{
+    display: flex;
+    justify-content: flex-start;
 }
 
-section {
+
+/* API SECTION  */
+
+
+.caractersSection .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 9% 0 10%;
+    flex-direction: column;
+}
+.caractersSection h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 36px
 }
 
-.caractersImg {
+.charactersContainer {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    width: 100%;
+    max-height: min-content;
     gap: 20px;
-    padding: 20px;
 }
 
 .character {
@@ -227,8 +223,17 @@ section {
     background-color: #5B8DF5;
     color: #ffffff;
     font-weight: 900;
-    width: 220px;
+    width: 400px;
+    border: 2px solid black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: transform .3s ease-in-out;
+}
+
+.character:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .character img {
@@ -246,23 +251,42 @@ section {
 }
 
 
-.btnSlice{
+.btnSlice {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    gap: 1rem;
-}
-
-.prevBtn, .nextBtn{
-    border: transparent;
+    gap: 20px;
+  }
+  
+  .prevBtn,
+  .nextBtn {
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: #000000;
+    border-radius: 30px;
+    height: 40px;
+    padding: 0 20px;
+    width: 120px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .prevBtn:hover,
+  .nextBtn:hover {
     background-color: #000000;
     color: #ffffff;
-    border-radius: 10px;
-    height: 30px;
-    width: 70px;
-    font-weight: bolder;
-}
+    border-color: #000000;
+  }
+
+
+
+/* FOOTER  */
 
 footer {
     background-image: url(../img/footer.svg);
@@ -271,7 +295,7 @@ footer {
     background-size: cover;
     text-align: center;
     width: 100%;
-    height: 10vh; 
+    height: 20vh; 
     position: relative; 
     margin-top: auto;
 }
@@ -284,6 +308,7 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
 }
 
 .logo {
@@ -300,12 +325,98 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 768px) {
 
-    .main-container img {
-        display: none;
-    }
+/* PAG LOGIN  */
 
-
+.login-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;  
+    text-decoration: none; 
+    border: transparent;
+    border-radius: 25px;
 }
 
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    /* RESPONSIVIDADE HOME  */
+
+    .hero {
+        overflow: hidden;
+    }
+    
+    .hero .container {
+        margin: 0 auto;
+        margin-right: 10%;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+        width: 50%;
+        text-align: center;
+    }
+
+    /* RESPONSIVIDADE MARCAS  */
+
+    .brands-section .container {
+        margin: 0 auto;
+    }
+
+    .brands-section h1 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .brands-section .disney-marcas {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-bottom: 7rem;
+        margin-left: 5%;
+    }
+
+    .brands-section img {
+        width: 100px;
+    }
+
+    /* RESPONSIVIDADE ABOUT  */
+
+    .about .container {
+        margin: 0 auto;
+    }
+
+    .about .box-img-paragraph {
+        margin: auto;
+        margin-right: 20%;
+    }
+
+    .about .box02 img {
+        left: 5rem;
+        width: 200px;
+    }
+
+    .about p {
+        font-size: 25px;       
+        width: 20%;
+       
+    }
+
+    .caractersSection .container {
+        margin: 0 auto;
+    }
+
+    .caractersSection h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .characterSection .charactersContainer {
+        max-width: 100px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+}
