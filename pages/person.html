@@ -4,17 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personagem</title>
+
+    <link rel="stylesheet" href="../css/person.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <header id="header">
+        <div class="container-header">
+          <div class="box">
+            <div class="title">
+              <img src="../img/favicon.png" alt="Disney A P I" class="logo" />
+            </div>
+            <div class="btn">
+              <div class="btn-document">
+                <a class="btn-doc" href="https://disneyapi.dev">DOCUMENTAÇÃO</a>
+              </div>
+              <div class="btn-login">
+                <a href="../index.html" class="login-btn">Voltar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
     <main>
         <div class="container">
-            <section id="person"></section>
-            <div class="name">
-                <h1 class="name" id="name"></h1>
-            </div>
-            <div id="infosPerson"></div>
+            <section id="person-container">
+                <div class="name">
+                    <h1 class="name" id="name"></h1>
+                </div>
+                <div id="infosPerson"></div>
+            </section>
         </div>
     </main>
+    <script src="../js/person.js"></script>
 </body>
 </html>

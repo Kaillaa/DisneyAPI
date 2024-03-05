@@ -23,6 +23,7 @@ body {
 header{
     width: 100%;
     padding: 20px 4%;
+    background-color: #5B8DF5;
     position: fixed;
     top: 0;
     left: 0;
@@ -31,8 +32,14 @@ header{
 }
 
 header.scroll{
-    background-color: black;
+    background: black;
     padding: 10px 4%;
+}
+
+.container-header .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 section {
